@@ -1,5 +1,5 @@
 /*
-修改边界条件或平衡分布函数等 
+淇敼杈圭晫鏉′欢鎴栧钩琛″垎甯冨嚱鏁扮瓑 
 */
 #include "stdafx.h"
 #include<iostream>
