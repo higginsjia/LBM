@@ -9,5 +9,7 @@ Lattice Boltzmann Method(LBM) to simulate CFD problem coupled with mass and heat
 - LES model
 - Volume of fluid(VOF)
 - Level set 
-
-## unsteady flow 2D
+## Future Work
+- GPU based method
+- Multi-grid or AMR
+- Other useful approach for optimization 
