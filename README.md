@@ -1,9 +1,13 @@
 # Lattice Boltzmann Method
 Lattice Boltzmann Method(LBM) to simulate CFD problem coupled with mass and heat transfer.
 ## steady flow 2D 
-### third title
-- D2Q9 
-- D2G9
+### Focus On
+- Steady flow 2D
+- Steady flow 3D
+- Free surface flow
+## Model Used
 - LES model
-- other new model
+- Volume of fluid(VOF)
+- Level set 
+
 ## unsteady flow 2D
