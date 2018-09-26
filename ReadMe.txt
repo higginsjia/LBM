@@ -1,0 +1,1 @@
+input file is *.sgn format, we can modify the code to adapt for different description.
