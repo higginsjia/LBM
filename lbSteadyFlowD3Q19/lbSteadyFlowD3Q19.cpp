@@ -24,22 +24,7 @@ int lbSteadyFlowD3Q19::funcIndex(int x, int y, int z, int i)
 
 void lbSteadyFlowD3Q19::preReadSgn(char* filename)
 {
-	short nx, ny, nz;
-
-	FILE* fp;
-	fp = fopen(filename, "rb");
-
-	if (fp == NULL) { std::cout << "Can not open SGN file" << std::endl; }
-	fseek(fp, 12, SEEK_SET);
-	fread(&nx, 2, 1, fp);
-	fread(&ny, 2, 1, fp);
-	fread(&nz, 2, 1, fp);
-
-	Nx = nx;
-	Ny = ny;
-	Nz = nz;
-
-	fclose(fp);
+//empty
 }
 
 void lbSteadyFlowD3Q19::setSgnMem()
@@ -51,40 +36,7 @@ void lbSteadyFlowD3Q19::setSgnMem()
 
 void lbSteadyFlowD3Q19::readSgn(char* filename)
 {
-	short nx, ny, nz;
-
-	FILE* fp;
-	fp = fopen(filename, "rb");
-	if (fp == NULL) { std::cout << "Can not open SGN file" << std::endl; }
-	fseek(fp, 12, SEEK_SET);
-	fread(&nx, 2, 1, fp);
-	fread(&ny, 2, 1, fp);
-	fread(&nz, 2, 1, fp);
-
-	int L = nx;
-	int M = ny;
-	int N = nz;
-	int MN = M*N;
-	int LMN = L*MN;
-	fseek(fp, 238, SEEK_CUR);
-
-	if (sgn == NULL) { std::cout << "ReadSGN: Not enough memory! " << std::endl; }
-	std::cout << "Read sgn file" << std::endl;
-	for (int i = 0; i<LMN; i++)
-	{
-		short m;
-		fread(&m, 2, 1, fp);
-		sgn[i] = m;
-	}
-	float dxxx = 0;
-	fread(&dxxx, 4, 1, fp);
-	float dx = dxxx / 1000;
-	gridLength = (double)dx;//set gridLength
-	std::cout << "dx = " << dx << std::endl;
-
-	printf("L=%d M=%d N=%d\n", L, M, N);
-	printf("sgn node=%d\n", L*M*N);
-	fclose(fp);
+//empty	
 }
 
 void lbSteadyFlowD3Q19::setMem()
