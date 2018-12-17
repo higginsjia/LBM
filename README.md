@@ -4,7 +4,7 @@ Lattice Boltzmann Method (LBM) to simulate CFD problem coupled with mass and hea
 - Steady flow 2D
 - Steady flow 3D
 - Free surface flow
-## Model Used
+## Current Model
 - LES model
 - Volume of fluid(VOF)
 - Level set 
